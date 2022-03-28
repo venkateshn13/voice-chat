@@ -20,7 +20,7 @@ app.get("/home" , (req , res)=>{
     res.render("index");
 });
 
-http.listen(3000, () => {
+http.listen(process.env.PORT || 8080, () => {
   console.log("the app is run in port 3000!");
 });
 
