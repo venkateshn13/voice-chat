@@ -18,7 +18,7 @@ const userStatus = {
     mainFunction(1000);
   };
   
-  var socket = io("ws://");
+  var socket = io("https://voice-chat-web.herokuapp.com/home");
   socket.emit("userInformation", userStatus);
   
   
